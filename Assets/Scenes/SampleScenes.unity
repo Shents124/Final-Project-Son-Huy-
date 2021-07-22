@@ -1110,13 +1110,7 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d125d752ff447544a9e33c427541dd9a, type: 2}
-    - target: {fileID: 3658110012506558382, guid: 9ff257f96888c404e93111ed1758bb8e,
-        type: 3}
-      propertyPath: joystickController
-      value: 
-      objectReference: {fileID: 1889452552}
-    m_RemovedComponents:
-    - {fileID: 3658110012506558382, guid: 9ff257f96888c404e93111ed1758bb8e, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ff257f96888c404e93111ed1758bb8e, type: 3}
 --- !u!4 &3658110013401009912 stripped
 Transform:
