@@ -12,11 +12,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/WaypointPatrol.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WaypointPatrol.cs" />
       </list>
     </option>
   </component>
@@ -58,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626776464873</updated>
       <workItem from="1626776469122" duration="8486000" />
+      <workItem from="1627028034210" duration="2375000" />
     </task>
     <servers />
   </component>
