@@ -8,6 +8,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveController/SaveTimeData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveController/SaveController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimeCounter/TimeCounter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -15,6 +17,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Gargoyle/Watcher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LightFlicker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeCounter/TimeCounter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SaveController/SaveTimeData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SaveController/SaveController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vYj4xTK5qIRKODpIdC0M9DmsUj" />
@@ -60,6 +64,7 @@
       <workItem from="1626745752257" duration="903000" />
       <workItem from="1626785889250" duration="2200000" />
       <workItem from="1626788347206" duration="606000" />
+      <workItem from="1627087174814" duration="896000" />
     </task>
     <servers />
   </component>
