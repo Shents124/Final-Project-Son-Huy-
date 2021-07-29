@@ -2,18 +2,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private static readonly int IsWalking = Animator.StringToHash("IsWalking");
-    
+
+    public FixedJoystick joystickController;
     public float turnSpeed = 20f;
 
     private Animator lemonAnimator;
     private Rigidbody lemonRigidBody;
-    private Quaternion lemonRotation = Quaternion.identity;
+    private Quaternion lemonRotation;
     private Vector3 lemonMovement;
-
-    private float horizontal;
-    private float vertical;
-    
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -21,33 +18,24 @@ public class PlayerController : MonoBehaviour
         lemonRigidBody = GetComponent<Rigidbody>();
     }
 
-    private void Update()
-    {
-        horizontal = JoystickInput.Instance.GetHorizontal();
-        vertical = JoystickInput.Instance.GetVertical();
-        
-       Move();
-    }
-
     // Update is called once per frame
     void FixedUpdate()
     {
-        Rotation();
+        LemonMoveAndRotation();
     }
 
-    private void Move()
+    void LemonMoveAndRotation()
     {
+        float horizontal = joystickController.Horizontal;
+        float vertical = joystickController.Vertical;
         lemonMovement = new Vector3(horizontal, 0f, vertical).normalized;
+
         bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);
         bool isWalking = hasHorizontalInput || hasVerticalInput;
-        lemonAnimator.SetBool(IsWalking, isWalking);
-    }
-    
-    void Rotation()
-    {
-        Vector3 desireForward = 
-            Vector3.RotateTowards(transform.forward, lemonMovement, turnSpeed * Time.deltaTime, 0f);
+        lemonAnimator.SetBool("IsWalking", isWalking);
+
+        Vector3 desireForward = Vector3.RotateTowards(transform.forward, lemonMovement, turnSpeed * Time.deltaTime, 0f);
         lemonRotation = Quaternion.LookRotation(desireForward);
     }
 
@@ -56,4 +44,13 @@ public class PlayerController : MonoBehaviour
         lemonRigidBody.MovePosition(lemonRigidBody.position + lemonMovement * lemonAnimator.deltaPosition.magnitude);
         lemonRigidBody.MoveRotation(lemonRotation);
     }
+
+   
+
+    public void OnPlayerDeath()
+    {
+        Debug.Log("Player Died");
+    }
+
+    
 }
