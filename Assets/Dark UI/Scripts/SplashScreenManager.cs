@@ -15,7 +15,7 @@ namespace Michsky.UI.Dark
         [Header("SETTINGS")]
         public bool disableSplashScreen;
 
-        void Start()
+        void OnEnable()
         {
             if (disableSplashScreen == true)
             {

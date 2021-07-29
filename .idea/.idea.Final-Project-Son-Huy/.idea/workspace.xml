@@ -8,9 +8,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoSingleton/MonoSingleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveController/SaveTimeData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/MenuButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBroker/EventBroker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveController/SaveController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/JoystickInput/JoystickInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimeCounter/TimeCounter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ExitButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager/GameSceneManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -19,11 +27,29 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/TimeCounter/TimeCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveController/SaveTimeData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveController/SaveController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/MainPanelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/SplashScreenManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/TimedEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager/SceneManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SceneManager/GameSceneManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/SplashScreenManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/BlurManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/ButtonAnimationFix.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/MainPanelManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/PanelTabManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EventBroker/EventBroker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/SceenLoading.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/JoystickInput/JoystickInput.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/GameSceneManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MonoSingleton/MonoSingleton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Button/ClickingButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Button/MenuButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Button/ExitButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIManager/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager/SoundManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/UIElementSound.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/QualityManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/CustomDropdown.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vYj4xTK5qIRKODpIdC0M9DmsUj" />
@@ -72,6 +98,11 @@
       <workItem from="1627087174814" duration="1492000" />
       <workItem from="1627220024701" duration="1662000" />
       <workItem from="1627284442437" duration="2767000" />
+      <workItem from="1627439546964" duration="2867000" />
+      <workItem from="1627456303144" duration="2444000" />
+      <workItem from="1627461649719" duration="2904000" />
+      <workItem from="1627479884379" duration="5738000" />
+      <workItem from="1627521228722" duration="6628000" />
     </task>
     <servers />
   </component>

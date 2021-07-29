@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
@@ -28,13 +27,7 @@ namespace Michsky.UI.Dark
         public bool setHighPriorty = true;
         public bool outOnPointerExit;
         public bool isListItem;
-        public bool invokeAtStart = false;
-
-        [Header("SAVING")]
-        public bool saveSelected = false;
-        [Tooltip("Note that every Dropdown should has its own unique tag.")]
-        public string dropdownTag = "Dropdown";
-
+        
         [Space(10)]
         [Header("CONTENT")]
         public int selectedItemIndex = 0;
@@ -87,14 +80,6 @@ namespace Michsky.UI.Dark
 
             if (setHighPriorty == true)
                 transform.SetAsLastSibling();
-
-            if (saveSelected == true)
-            {
-                if (invokeAtStart == true)
-                    dropdownItems[PlayerPrefs.GetInt(dropdownTag + "Dropdown")].OnItemSelection.Invoke();
-                else
-                    ChangeDropdownInfo(PlayerPrefs.GetInt(dropdownTag + "Dropdown"));
-            }
         }
 
         public void SetupDropdown()
@@ -128,13 +113,7 @@ namespace Michsky.UI.Dark
                 itemButton.onClick.AddListener(delegate
                 {
                     ChangeDropdownInfo(index = go.transform.GetSiblingIndex());
-
-                    if (saveSelected == true)
-                        PlayerPrefs.SetInt(dropdownTag + "Dropdown", go.transform.GetSiblingIndex());
                 });
-
-                if (invokeAtStart == true)
-                    dropdownItems[i].OnItemSelection.Invoke();
             }
 
             selectedText.text = dropdownItems[selectedItemIndex].itemName;
@@ -146,8 +125,8 @@ namespace Michsky.UI.Dark
         {
             selectedImage.sprite = dropdownItems[itemIndex].itemIcon;
             selectedText.text = dropdownItems[itemIndex].itemName;
-            selectedItemIndex = itemIndex;
-            // dropdownItems[itemIndex].OnItemSelection.Invoke();
+            selectedItemIndex = itemIndex; 
+            dropdownItems[itemIndex].OnItemSelection.Invoke();
         }
 
         public void Animate()

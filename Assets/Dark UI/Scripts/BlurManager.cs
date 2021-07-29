@@ -15,7 +15,7 @@ namespace Michsky.UI.Dark
 
         float currentBlurValue;
 
-        void Start()
+        void OnEnable()
         {
             if(customProperty == null)
             {

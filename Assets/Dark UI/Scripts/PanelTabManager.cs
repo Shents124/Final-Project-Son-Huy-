@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Michsky.UI.Dark
@@ -33,7 +32,7 @@ namespace Michsky.UI.Dark
         string buttonFadeIn = "Hover to Pressed";
         string buttonFadeOut = "Pressed to Normal";
 
-        void Start()
+        void OnEnable()
         {
             currentButton = buttons[currentPanelIndex];
             currentButtonAnimator = currentButton.GetComponent<Animator>();

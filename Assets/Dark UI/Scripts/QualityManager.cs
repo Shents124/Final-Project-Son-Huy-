@@ -5,41 +5,52 @@ namespace Michsky.UI.Dark
 {
     public class QualityManager : MonoBehaviour
     {
+        private const string AnisotropicFilteringKey = "AnisotropicFiltering";
+        private const string AntiAliasingKey = "AntiAliasing";
+        private const string ShadowResolutionKey = "ShadowResolution";
+        private const string TextureKey = "Texture";
+        private const string ReflectionKey = "Reflection";
+        
         [Header("AUDIO")]
         public AudioMixer mixer;
         public SliderManager masterSlider;
         public SliderManager musicSlider;
         public SliderManager sfxSlider;
 
-        void Start()
+        public CustomDropdown anisotropicFiltering;
+        public CustomDropdown antiAliasing;
+        public CustomDropdown shadowResolution;
+        public CustomDropdown textureDropdown;
+        public CustomDropdown reflectionDropdown;
+        
+        void OnEnable()
         {
             mixer.SetFloat("Master", Mathf.Log10(PlayerPrefs.GetFloat(masterSlider.sliderTag + "DarkSliderValue")) * 20);
             mixer.SetFloat("Music", Mathf.Log10(PlayerPrefs.GetFloat(musicSlider.sliderTag + "DarkSliderValue")) * 20);
             mixer.SetFloat("SFX", Mathf.Log10(PlayerPrefs.GetFloat(sfxSlider.sliderTag + "DarkSliderValue")) * 20);
+            
+            LoadSetting();
         }
         
         public void AnisotropicFilteringEnable()
         {
             QualitySettings.anisotropicFiltering = AnisotropicFiltering.ForceEnable;
+            PlayerPrefs.SetInt(AnisotropicFilteringKey, anisotropicFiltering.selectedItemIndex);
         }
 
         public void AnisotropicFilteringDisable()
         {
             QualitySettings.anisotropicFiltering = AnisotropicFiltering.Disable;
+            PlayerPrefs.SetInt(AnisotropicFilteringKey, anisotropicFiltering.selectedItemIndex);
         }
 
         public void AntiAliasingSet(int index)
         {
             // 0, 2, 4, 8 - Zero means off
             QualitySettings.antiAliasing = index;
+            PlayerPrefs.SetInt(AntiAliasingKey, antiAliasing.selectedItemIndex);
         }
-
-        public void VsyncSet(int index)
-        {
-            // 0, 1 - Zero means off
-            QualitySettings.vSyncCount = index;
-        }
-
+        
         public void ShadowResolutionSet(int index)
         {
             if (index == 3)
@@ -50,12 +61,15 @@ namespace Michsky.UI.Dark
                 QualitySettings.shadowResolution = ShadowResolution.Medium;
             else if (index == 0)
                 QualitySettings.shadowResolution = ShadowResolution.Low;
+            
+            PlayerPrefs.SetInt(ShadowResolutionKey, shadowResolution.selectedItemIndex);
         }
 
         public void TextureSet(int index)
         {
             // 0 = Full, 4 = Eight Resolution
             QualitySettings.masterTextureLimit = index;
+            PlayerPrefs.SetInt(TextureKey, textureDropdown.selectedItemIndex);
         }
         
         public void ReflectionSet(int index)
@@ -64,6 +78,8 @@ namespace Michsky.UI.Dark
                 QualitySettings.realtimeReflectionProbes = false;
             else if (index == 1)
                 QualitySettings.realtimeReflectionProbes = true;
+
+            PlayerPrefs.SetInt(ReflectionKey, reflectionDropdown.selectedItemIndex);
         }
 
         public void VolumeSetMaster(float volume)
@@ -81,6 +97,20 @@ namespace Michsky.UI.Dark
             mixer.SetFloat("SFX", Mathf.Log10(volume) * 20);
         }
 
-       
+        private void LoadSetting()
+        {
+            anisotropicFiltering.selectedItemIndex = 
+                PlayerPrefs.HasKey(AnisotropicFilteringKey) ? PlayerPrefs.GetInt(AnisotropicFilteringKey) : 0;
+
+            antiAliasing.selectedItemIndex = PlayerPrefs.HasKey(AntiAliasingKey) ? PlayerPrefs.GetInt(AntiAliasingKey) : 0;
+
+            shadowResolution.selectedItemIndex =
+                PlayerPrefs.HasKey(ShadowResolutionKey) ? PlayerPrefs.GetInt(ShadowResolutionKey) : 0;
+
+            textureDropdown.selectedItemIndex = PlayerPrefs.HasKey(TextureKey) ? PlayerPrefs.GetInt(TextureKey) : 0;
+
+            reflectionDropdown.selectedItemIndex =
+                PlayerPrefs.HasKey(ReflectionKey) ? PlayerPrefs.GetInt(ReflectionKey) : 0;
+        }
     }
 }

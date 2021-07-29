@@ -7,7 +7,7 @@ namespace Michsky.UI.Dark
     {
         private Button fixButton;
 
-        void Start()
+        void OnEnable()
         {
             fixButton = gameObject.GetComponent<Button>();
             fixButton.onClick.AddListener(Fix);

@@ -27,7 +27,7 @@ namespace Michsky.UI.Dark
         PanelBrushManager currentBrush;
         PanelBrushManager nextBrush;
 
-        void Start()
+        void OnEnable()
         {
             currentPanel = panels[currentPanelIndex];
             currentPanelAnimator = currentPanel.GetComponent<Animator>();
