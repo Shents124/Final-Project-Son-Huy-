@@ -76,13 +76,37 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Button" t="Include">
+            <e p="ExitButton.cs" t="Include" />
+            <e p="MenuButton.cs" t="Include" />
+          </e>
+          <e p="EventBroker" t="Include">
+            <e p="EventBroker.cs" t="Include" />
+          </e>
+          <e p="GameManager" t="Include">
+            <e p="GameManager.cs" t="Include" />
+          </e>
+          <e p="GameSceneManager" t="Include">
+            <e p="GameSceneManager.cs" t="Include" />
+            <e p="SceenLoading.cs" t="Include" />
+          </e>
           <e p="Gargoyle" t="Include">
             <e p="Watcher.cs" t="Include" />
           </e>
           <e p="GhostController.cs" t="Include" />
           <e p="InGameManager.cs" t="Include" />
-          <e p="LightFlicker.cs" t="Include" />
-          <e p="PlayerController.cs" t="Include" />
+          <e p="JoystickInput" t="Include">
+            <e p="JoystickInput.cs" t="Include" />
+          </e>
+          <e p="Light" t="Include">
+            <e p="LightFlicker.cs" t="Include" />
+          </e>
+          <e p="MonoSingleton" t="Include">
+            <e p="MonoSingleton.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="PlayerController.cs" t="Include" />
+          </e>
           <e p="RoomImpact.cs" t="Include" />
           <e p="SaveController" t="Include">
             <e p="SaveController.cs" t="Include" />
@@ -90,6 +114,9 @@
           </e>
           <e p="TimeCounter" t="Include">
             <e p="TimeCounter.cs" t="Include" />
+          </e>
+          <e p="UIManager" t="Include">
+            <e p="UIManager.cs" t="Include" />
           </e>
         </e>
         <e p="Shaders" t="Include">
