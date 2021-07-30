@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoSingleton<GameManager>
 {
-    
     public void PauseGame()
     {
         Time.timeScale = 0f;
@@ -18,6 +17,7 @@ public class GameManager : MonoSingleton<GameManager>
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        AudioManager.Instance.PlayHouseMusic();
     }
     
     public void ExitGame()
@@ -28,8 +28,4 @@ public class GameManager : MonoSingleton<GameManager>
         Application.Quit();
     }
     
-    public void Destroy()
-    {
-        Destroy(this);
-    }
 }

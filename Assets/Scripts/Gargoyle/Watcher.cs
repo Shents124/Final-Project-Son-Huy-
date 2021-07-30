@@ -7,7 +7,8 @@ public class Watcher : MonoBehaviour
     {
         if (other.CompareTag(PlayerTag))
         {
-            Debug.Log("Catch player");
+            UIManager.Instance.DisplayLoseGame();
+            AudioManager.Instance.PlaySfxLoseGame();
         }
     }
 }

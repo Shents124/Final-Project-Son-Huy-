@@ -20,6 +20,7 @@ public class SceenLoading : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         EventBroker.CallOnLoadSceneDone();
+        AudioManager.Instance.PlayHouseMusic();
     }
     
     // Start is called before the first frame update

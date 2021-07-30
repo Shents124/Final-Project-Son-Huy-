@@ -21,10 +21,7 @@ public class GameSceneManager : MonoSingleton<GameSceneManager>
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-    }
-
-    public void Destroy()
-    {
-        Destroy(this);
+        UIManager.Instance.DisableUI();
+        AudioManager.Instance.StopPlayMusic();
     }
 }

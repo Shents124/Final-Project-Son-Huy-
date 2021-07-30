@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Audio;
 
 namespace Michsky.UI.Dark
@@ -22,16 +23,21 @@ namespace Michsky.UI.Dark
         public CustomDropdown shadowResolution;
         public CustomDropdown textureDropdown;
         public CustomDropdown reflectionDropdown;
+
+        private float multiplier = 30f;
         
         void OnEnable()
         {
-            mixer.SetFloat("Master", Mathf.Log10(PlayerPrefs.GetFloat(masterSlider.sliderTag + "DarkSliderValue")) * 20);
-            mixer.SetFloat("Music", Mathf.Log10(PlayerPrefs.GetFloat(musicSlider.sliderTag + "DarkSliderValue")) * 20);
-            mixer.SetFloat("SFX", Mathf.Log10(PlayerPrefs.GetFloat(sfxSlider.sliderTag + "DarkSliderValue")) * 20);
-            
             LoadSetting();
         }
-        
+
+        private void Start()
+        {
+            mixer.SetFloat("Master", Mathf.Log10(PlayerPrefs.GetFloat(masterSlider.sliderTag + "DarkSliderValue")) * multiplier);
+            mixer.SetFloat("Music", Mathf.Log10(PlayerPrefs.GetFloat(musicSlider.sliderTag + "DarkSliderValue")) * multiplier);
+            mixer.SetFloat("SFX", Mathf.Log10(PlayerPrefs.GetFloat(sfxSlider.sliderTag + "DarkSliderValue")) * multiplier);
+        }
+
         public void AnisotropicFilteringEnable()
         {
             QualitySettings.anisotropicFiltering = AnisotropicFiltering.ForceEnable;
@@ -84,17 +90,17 @@ namespace Michsky.UI.Dark
 
         public void VolumeSetMaster(float volume)
         {
-            mixer.SetFloat("Master", Mathf.Log10(volume) * 20);
+            mixer.SetFloat("Master", Mathf.Log10(volume) * multiplier);
         }
 
         public void VolumeSetMusic(float volume)
         {
-            mixer.SetFloat("Music", Mathf.Log10(volume) * 20);
+            mixer.SetFloat("Music", Mathf.Log10(volume) * multiplier);
         }
 
         public void VolumeSetSFX(float volume)
         {
-            mixer.SetFloat("SFX", Mathf.Log10(volume) * 20);
+            mixer.SetFloat("SFX", Mathf.Log10(volume) * multiplier);
         }
 
         private void LoadSetting()
