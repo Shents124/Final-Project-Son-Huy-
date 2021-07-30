@@ -37,11 +37,15 @@ EditorUserSettings:
       value: 22424703114646680e0b0227036c73150012146a0d25293e2a692820a2ed3528acf238e0f323
 =======
     RecentlyUsedScenePath-8:
-      value: 22424703114646680e0b0227036c72111f19352f223d68252320092a
+      value: 22424703114646680e0b0227036c73150012147b623d28393930
       flags: 0
     RecentlyUsedScenePath-9:
+<<<<<<< HEAD
       value: 22424703114646680e0b0227036c73150012147b623d28393930
 >>>>>>> c4518b5... Fixing UI and Setting audio
+=======
+      value: 22424703114646680e0b0227036c72111f19352f223d68252320092a
+>>>>>>> fc2051d... Fix some bug
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650
