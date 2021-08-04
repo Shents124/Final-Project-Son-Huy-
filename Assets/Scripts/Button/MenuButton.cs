@@ -15,6 +15,6 @@ public class MenuButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        menuButton.onClick.AddListener(() => GameSceneManager.Instance.LoadScene(sceneIndex));
+        
     }
 }

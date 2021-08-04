@@ -14,12 +14,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/MenuButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBroker/EventBroker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager/SceneLoaded.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameVictory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tween/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SpinningChair/SpinningChair.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveController/SaveController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/JoystickInput/JoystickInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TimeCounter/TimeCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/ExitButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tween/WinGame.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,7 +44,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/JoystickInput/JoystickInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoSingleton/MonoSingleton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Button/ClickingButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Button/MenuButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Button/ExitButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager/SoundManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/UIElementSound.cs" />
@@ -56,7 +57,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Ghost/GhostController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameVictory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/SceenLoading.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/GameSceneManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/SliderManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
@@ -65,6 +65,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/MeshCombiner.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/QualityManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/PanelTabManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/GameSceneManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Button/MenuButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/MainMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/SceneLoaded.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/ScenePartLoader.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vYj4xTK5qIRKODpIdC0M9DmsUj" />
@@ -127,6 +132,8 @@
       <workItem from="1627873552417" duration="1436000" />
       <workItem from="1627891577374" duration="607000" />
       <workItem from="1627895478210" duration="1358000" />
+      <workItem from="1628067048479" duration="1256000" />
+      <workItem from="1628070170562" duration="2366000" />
     </task>
     <servers />
   </component>
