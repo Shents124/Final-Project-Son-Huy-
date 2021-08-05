@@ -9,36 +9,24 @@ public class GhostController : MonoBehaviour
     public Transform[] waypoints;
     public Transform targetPlayer;
     
-    private float playerInRoomGhostSpeed = 3f;
-    private float playerOutRoomGhostSpeed = 2f;
-    
-    private bool isPlayerInGhostRoom = false;
     private int currentWaypointIndex;
     
-    private Rigidbody ghostRigidbody;
-
     private void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
-    void Start ()
+    void Start()
     {
-        ghostRigidbody = GetComponent<Rigidbody>();
-        navMeshAgent.SetDestination (waypoints[0].position);
+        navMeshAgent.SetDestination(waypoints[0].position);
     }
 
-    void Update ()
+    void Update()
     {
-        if (isPlayerInGhostRoom == true)
-        {
-            navMeshAgent.SetDestination(targetPlayer.position);
-        }
-        
-        else if (navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance)
+        if (navMeshAgent.remainingDistance < navMeshAgent.stoppingDistance)
         {
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
-            navMeshAgent.SetDestination (waypoints[currentWaypointIndex].position);
+            navMeshAgent.SetDestination(waypoints[currentWaypointIndex].position);
         }
     }
 
@@ -48,18 +36,7 @@ public class GhostController : MonoBehaviour
         {
             UIManager.Instance.DisplayLoseGame();
             AudioManager.Instance.PlaySfxLoseGame();
+            navMeshAgent.speed = 0f;
         }
-    }
-    
-    public void DetectPlayer()
-    {
-        isPlayerInGhostRoom = true;
-        navMeshAgent.speed = playerInRoomGhostSpeed;
-    }
-
-    public void NotDetectPlayer()
-    {
-        isPlayerInGhostRoom = false;
-        navMeshAgent.speed = playerOutRoomGhostSpeed;
     }
 }

@@ -25,6 +25,7 @@ namespace Michsky.UI.Dark
                 {
                     audioSource = gameObject.GetComponent<AudioSource>();
                     audioSource.playOnAwake = false;
+                    audioSource.ignoreListenerPause = true;
                 }
 
                 catch

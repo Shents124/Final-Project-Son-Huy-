@@ -23,7 +23,7 @@ public class AudioManager : MonoSingleton<AudioManager>
         audioSource.loop = true;
     }
 
-    public void StopPlayMusic()
+    private void StopPlayMusic()
     {
         audioMixer.SetFloat(AudioMixerSFXGame, -80);
         audioMixer.SetFloat(AudioMixerMusic, -80);

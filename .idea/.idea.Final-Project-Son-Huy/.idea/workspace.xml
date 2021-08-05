@@ -13,6 +13,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveController/SaveTimeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Button/MenuButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudioListener.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventBroker/EventBroker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSceneManager/SceneLoaded.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager/GameVictory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,36 +41,37 @@
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/BlurManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/ButtonAnimationFix.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/MainPanelManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EventBroker/EventBroker.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/JoystickInput/JoystickInput.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MonoSingleton/MonoSingleton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Button/ClickingButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Button/ExitButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SoundManager/SoundManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/UIElementSound.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/CustomDropdown.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SpinningChair/SpinningChair.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GhostController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tween/GameOver.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Tween/WinGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIManager/UIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Gargoyle/Watcher.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ghost/GhostController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameVictory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/SceenLoading.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/SliderManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager/AudioManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FPS Display/FPSDisplay.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MeshCombiner/MeshCombiner.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/QualityManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/PanelTabManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/GameSceneManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Button/MenuButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/MainMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/SceneLoaded.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/ScenePartLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAudioListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EventBroker/EventBroker.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameSceneManager/GameSceneManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Dark UI/Scripts/UIElementSound.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gargoyle/Watcher.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ghost/GhostController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vYj4xTK5qIRKODpIdC0M9DmsUj" />
@@ -134,6 +136,8 @@
       <workItem from="1627895478210" duration="1358000" />
       <workItem from="1628067048479" duration="1256000" />
       <workItem from="1628070170562" duration="2366000" />
+      <workItem from="1628126340476" duration="730000" />
+      <workItem from="1628169065025" duration="3366000" />
     </task>
     <servers />
   </component>

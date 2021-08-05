@@ -6,6 +6,5 @@ public class GameSceneManager : MonoSingleton<GameSceneManager>
     {
         SceneManager.LoadScene("MainMenu");
         UIManager.Instance.DisableUI();
-        AudioManager.Instance.StopPlayMusic();
     }
 }

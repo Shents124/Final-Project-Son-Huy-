@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     private Quaternion lemonRotation = Quaternion.identity;
     private Vector3 lemonMovement;
     private AudioSource audioSource;
-
+    
     private float horizontal;
     private float vertical;
     private bool isWalking;
@@ -69,4 +69,5 @@ public class PlayerController : MonoBehaviour
         lemonRigidBody.MovePosition(lemonRigidBody.position + lemonMovement * lemonAnimator.deltaPosition.magnitude);
         lemonRigidBody.MoveRotation(lemonRotation);
     }
+    
 }
